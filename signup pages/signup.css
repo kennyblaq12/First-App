@@ -1,0 +1,304 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+  /* background: rgb(130, 106, 251); */
+  /* background-color: orangered; */
+}
+.fa-house {
+  background-color: none;
+  margin-right: 10px;
+}
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  color: rgb(21 111 74);
+}
+.link > a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 5px;
+}
+input {
+  width: 240px;
+  height: 30px;
+  background-color: #f0f0f0;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+
+.btn1 {
+  border: 1px solid rgb(21, 111, 74);
+  outline: none;
+  background-color: #fff;
+  color: rgb(21, 111, 74);
+  padding: 5px 8px;
+  margin-right: 5px;
+}
+/* .btyy {
+  padding: 0px 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(21, 111, 74);
+} */
+.btn2 {
+  border: none;
+  outline: none;
+  background-color: rgb(21, 111, 74);
+  color: #f0f0f0;
+  padding: 6px 8px;
+}
+.container {
+  position: relative;
+  display: flex;
+  /* max-width: 500px; */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  background: rgb(159, 212, 233);
+  padding: 18px;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 80%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: green;
+}
+.form button:hover {
+  background: green;
+}
+.button i {
+  display: none;
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .button i {
+    display: block;
+  }
+
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+  .link > a {
+    display: none;
+  }
+  .title > h2 {
+    font-size: 15px;
+  }
+  .button > .btn1,
+  .btn2 {
+    display: none;
+  }
+  .grid {
+    padding: 10px 10px;
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-content: space-between;
+  }
+}
+
+nav {
+  background-color: rgb(21 111 74);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  align-items: center;
+  color: white;
+
+  font-size: 12px;
+}
+nav a {
+  color: white;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+nav > button {
+  background-color: none;
+  outline: none;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  background-color: #0000001a;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #d8c2c2;
+  padding: 20px 0;
+}
+
+.fa-brands {
+  width: 40px;
+}
+
+/* Desktop layout */
+.end {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.btnn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btnn > button {
+  width: 40%;
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+  .end {
+    width: 90%;
+    display: block;
+
+    /* margin: 40px 0px; */
+    /* margin-top: 100px; */
+  }
+
+  .container {
+    display: block;
+  }
+  .link > input {
+    display: none;
+  }
+  #oat {
+    padding: 15px 0px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    /* margin-bottom: 20px; */
+  }
+
+  .icons {
+    margin-top: 10px;
+  }
+
+  #oat {
+    margin: 20px 0;
+  }
+
+  .resize {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .end p {
+    margin: 10px 0;
+  }
+}

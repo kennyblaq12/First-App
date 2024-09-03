@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+nav {
+  background-color: rgb(21 111 74);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  align-items: center;
+  color: white;
+
+  font-size: 12px;
+}
+nav a {
+  color: white;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+nav > button {
+  background-color: none;
+  outline: none;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  background-color: #0000001a;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 766px) {
+  .link > a {
+    display: none;
+  }
+  .title > h2 {
+    font-size: 15px;
+  }
+  .button {
+    display: none;
+  }
+  .grid {
+    padding: 10px 8px;
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-content: space-between;
+  }
+  .first,
+  .second,
+  .third {
+    display: none;
+  }
+
+  #main {
+    display: grid;
+  }
+
+  .filler {
+    display: none;
+  }
+  .para,
+  .text {
+    margin: auto;
+  }
+  .para {
+    margin-bottom: 60px;
+  }
+  /* .imad {
+    /* display: none; 
+  } */
+  #accordion {
+    margin: 50px 0px;
+    width: 350px;
+  }
+  .all {
+    /* background-color: rgb(159, 212, 233); */
+    background-image: url(img3.avif);
+
+    width: 100%;
+    height: 500px;
+    color: white;
+    font-weight: 500;
+  }
+  .sss {
+    display: none;
+  }
+  .pp h2 {
+    color: white;
+  }
+  /* footer {
+    /* display: block; */
+}
+.end {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.po {
+  max-width: 800px;
+}
+
+/* } */
+
+/*  */
+
+/* 
+ */
+
+/*  */
+
+/* 
+ */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.fa-house {
+  background-color: none;
+  margin-right: 10px;
+}
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.title {
+  display: flex;
+  align-items: center;
+  color: rgb(21 111 74);
+}
+.link > a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 5px;
+}
+input {
+  width: 240px;
+  height: 30px;
+  background-color: #f0f0f0;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+
+.btn1 {
+  border: 1px solid rgb(21, 111, 74);
+  outline: none;
+  background-color: #fff;
+  color: rgb(21, 111, 74);
+  padding: 5px 8px;
+  margin-right: 5px;
+}
+/* .btyy {
+  padding: 0px 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(21, 111, 74);
+} */
+.btn2 {
+  border: none;
+  outline: none;
+  background-color: rgb(21, 111, 74);
+  color: #f0f0f0;
+  padding: 6px 8px;
+}
+#main {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(159, 212, 233);
+  /* padding-right: 6px;
+  padding-left: 6px; */
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+.para {
+  background-color: #f5f0f0;
+  color: rgb(21, 111, 74);
+  max-width: 250px;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+.text h2 {
+  max-width: 400px;
+  color: rgb(21, 111, 74);
+  font-size: 30px;
+}
+.pp > h2 {
+  max-width: 400px;
+  color: rgb(21, 111, 74);
+  font-size: 30px;
+}
+.text p {
+  max-width: 420px;
+  font-size: 13px;
+  color: rgb(21, 111, 74);
+}
+.first {
+  background-image: url(img1.avif);
+  width: 190px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  position: relative;
+  margin-right: 20px;
+}
+.second {
+  background-image: url(img2.avif);
+  width: 170px;
+  width: 200px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  position: relative;
+  margin-right: 20px;
+}
+.third {
+  background-image: url(img3.avif);
+  width: 170px;
+  width: 200px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  position: relative;
+  margin-right: 20px;
+}
+.filler {
+  /* width: 50%; */
+
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+@keyframes myAnimation {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50px;
+  }
+}
+.bbb {
+  padding: 12px 18px;
+}
+/* .bbb:hover {
+  background-color: white;
+  border: 1px solid rgb(21, 111, 74);
+  color: rgb(21, 111, 74);
+} */
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 30px;
+  align-items: center;
+  /* height: 300px; */
+}
+.pp > p {
+  max-width: 400px;
+}
+.imad > img {
+  width: 400px;
+  height: auto;
+}
+.btn2 > a {
+  text-decoration: none;
+  color: white;
+}
+.btn2 > a:hover {
+  color: rgb(21, 111, 74);
+  transition: 0.5s;
+}
+
+#accordion {
+  /* margin: 50px 0px; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 440px;
+}
+#accordion li {
+  list-style: none;
+  width: 90%;
+  margin-bottom: 10px;
+  background-color: rgb(206, 192, 192);
+  /* padding: 10px; */
+  border-radius: 8px;
+}
+#accordion li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500px;
+  color: blue;
+  cursor: pointer;
+}
+#accordion li label span {
+  transform: rotate(90deg);
+  font-size: 12px;
+  color: blue;
+}
+#accordion label + input[type="radio"] {
+  display: none;
+}
+#accordion .content {
+  padding: 0 5px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+}
+.bg {
+  background-color: rgb(159, 212, 233);
+  padding-bottom: 20px;
+  padding-top: 10px;
+  display: grid;
+}
+.all {
+  background-color: rgb(159, 212, 233);
+  width: 75%;
+  height: 320px;
+  margin: auto;
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  /* display: inline-block; */
+
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto; */
+}
+
+.sss > img {
+  /* position: absolute; */
+  width: 300px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+}
+/* General styling */
+footer {
+  background-color: #d8c2c2;
+  padding: 20px 0;
+}
+
+.fa-brands {
+  width: 40px;
+}
+
+/* Desktop layout */
+.end {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+  .end {
+    width: 90%;
+    display: block;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    /* margin-bottom: 20px; */
+  }
+
+  .icons {
+    margin-top: 10px;
+  }
+
+  #oat {
+    margin: 20px 0;
+    padding: 15px 0px;
+  }
+
+  .resize {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .end p {
+    margin: 10px 0;
+  }
+  .flex {
+    display: block;
+  }
+  .v {
+    width: 100%;
+    margin-left: -15px;
+  }
+}
+
+footer p {
+  /* text-align: center; */
+  font-size: 12px;
+}
+
+/* .fff {
+  display: grid;
+}
+.f {
+  margin: auto;
+  display: flex;
+} */
+
+/* .first-img {
+  background-image: url(img1.avif);
+  height: auto;
+  width: 250px;
+  height: 150px;
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  position: relative;
+}
+
+@keyframes myAnimation {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50px;
+  }
+}
+.second-img {
+  background-image: url(img2.avif);
+  width: 250px;
+  position: absolute;
+  height: 200px;
+  left: 300px;
+
+  bottom: 50px;
+}
+.third-img {
+  background-image: url(img3.avif);
+  width: 250px;
+  position: absolute;
+  height: 200px;
+  bottom: 100px;
+
+  left: 600px;
+
+  /* height: 300px; 
+}
+.fourth-img {
+  background-image: url(img4.avif);
+  width: 250px;
+  position: absolute;
+  height: 200px;
+  bottom: 200px;
+
+  left: 900px;
+
+  /* height: 300px; *
+}
+.images {
+  display: inline-block;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  align-items: center;
+  top: 300px;
+  left: 180px;
+  gap: 30px;
+} */
